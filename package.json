@@ -2,6 +2,7 @@
   "dependencies": {
     "@react-three/drei": "^9.107.0",
     "@react-three/fiber": "^8.16.8",
+    "gh-pages": "^6.1.1",
     "react-scripts": "^5.0.1",
     "three": "^0.165.0"
   },
@@ -9,7 +10,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -27,5 +30,6 @@
     "customize-cra": "^1.0.0",
     "ignore-loader": "^0.1.2",
     "react-app-rewired": "^2.2.1"
-  }
+  },
+  "homepage": "https://AlissonRoss.github.io/ThreeJSTestbed"
 }
