@@ -6,7 +6,7 @@ import { useGLTF, PerspectiveCamera, useAnimations } from '@react-three/drei'
 
 export function Model(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/hackmerced.glb')
+  const { nodes, materials, animations } = useGLTF(process.env.PUBLIC_URL+'/hackmerced.glb')
   const { actions } = useAnimations(animations, group)
   useEffect(() => {
     console.log(actions);
